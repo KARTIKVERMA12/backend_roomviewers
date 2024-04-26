@@ -46,6 +46,6 @@ app.use("/api/my-bookings", bookingRoutes);
 //   res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
 // });
 
-app.listen(4000, () => {
-  console.log("server running on localhost:4000");
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
